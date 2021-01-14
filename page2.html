@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background : none;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-left:30%;margin-top:25%;" id="linkdiv">
+        <a href="#" id="link"  style="color:blue;" 
+        onclick="openFullscreen();">Click Here To Start</a>
+    </div>
+
+    <div style="margin-left:30%;margin-top:25%;" id="nav" style="display:none;">
+      <a href="page3.html"  id="link" style="color:blue;" >Click Here For Next Surprise</a>
+  </div>
+    
+    <video style="display:none" id="myvideo" controls="false">
+        <source src="video/birthday_video.mp4" type="video/mp4">
+    </video>
+</body>
+<script>
+    var elem = document.getElementById("myvideo");
+
+    function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.style.display="";
+    document.getElementById("linkdiv").style.display="none";
+    elem.play();
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.style.display="";
+    elem.play();
+    document.getElementById("linkdiv").style.display="none";
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.style.display="";
+    elem.play();
+    document.getElementById("linkdiv").style.display="none";
+    elem.msRequestFullscreen();
+  }
+}
+
+document.getElementById('myvideo').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+      document.getElementById('myvideo').style.display = "none";
+      document.exitFullscreen();
+      document.getElementById("nav").style.display = "";
+    }
+</script>
+</html>

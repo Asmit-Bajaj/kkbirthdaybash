@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="page3Body">
+    <audio id="myAudio" loop>
+		<source src="songs/page_3Song.mp3" type="audio/mp3">
+    </audio>
+
+    <div style="margin-left:30%;margin-top:25%;" id="linkdiv">
+        <a href="#" id="link"  style="color:blue;" 
+        onclick="openFullscreen();">Click Here To Start</a>
+    </div>
+    
+    <div style="display: none;margin-top: 4%;" id="mainBox">
+        <img src="image/saumya.jpeg" class="main" id="main1" style="width: 400px;">
+        <div class="subMain" id="subMain1">
+            Happppppppppppiiiie birthday Rana... 🎂 <br>
+            A beautiful + sweet + cute + <br>softnatured + supportive <br>+intelligent + crazy girl....👸
+            On your birthday <br>I wish you <br>all love and happiness in the world and whatever <br>
+            you want most in the life it comes to you <br>just the way you imagined it or better..<br>
+            I m greatful to have you as a friend.<br> 
+            Bahut payari h tu....pta nii tha humari <br>Itni acchi bonding Ho jayegi....<br>
+            Your dance moves 😱💃.... <br>Mai Tera haye re jabra hoye re jabra fan Ho gya😂
+            <br>By the way....... Ek aur <br>saal purani Ho gyi teri <br>alhad jawaani..........
+            Happy 20th💫 kannu💃<br>
+            Love you ❤🎈🎆🎁🎉🎀<br><br>
+            <span style="font-size: 25px;">-- Saumya Srishti</span><br>
+            <a href="#" style="color:blue;float:right;margin-right:7%;text-decoration: none;" 
+            onclick="next();">Next -></a>
+        </div>
+
+        <img src="image/kamakhaya.jpeg" class="main" id="main2" style="display: none;width: 320px;">
+        <div class="subMain" id="subMain2" style="display: none;">
+            <br><br><br>
+            I wish you love, hope <br>and everlasting joy and happiness... <br>
+            Happy birthday ❤ <br><br>tu ekdum mast hai yrr aur tu jaisi hai<br>
+            waisi hi rahna 😄 aur pahle pahadi 
+            <br>language sikha dena fhir video bhejna 😂<br><br>
+            <span style="font-size: 25px;">-- kamakhaya Tiwari</span><br><br><br><br>
+            <a href="#" style="color:blue;float:right;margin-right:7%;text-decoration: none;"
+            onclick="next();">Next -></a>
+            <a href="#" style="color:blue;float:left;margin-right:7%;text-decoration: none;"
+            onclick="prev();"><- Prev</a>
+        </div>
+
+        <img src="image/nitin.jpeg" class="main" id="main3" style="display: none;width: 270px;">
+        <div class="subMain" id="subMain3" style="display: none;">
+            <br><br><br>
+            Happy birthday 🎉🎉🎂🎂🎂 samoshi. May God will <br>
+            <br>full your whole needs. Aur tu moti ho <br>gae hai lockdown me 😁😅. Enjoy your day.<br><br>
+            Be 😁 happy pichli party yaad hai teri.<br><br>
+            <span style="font-size: 25px;">-- Nitin Dwivedi</span><br><br><br>
+            <a href="#" style="color:blue;float:right;margin-right:7%;text-decoration: none;"
+            onclick="next();">Next -></a>
+            <a href="#" style="color:blue;float:left;margin-right:7%;text-decoration: none;"
+            onclick="prev();"><- Prev</a>
+        </div>
+
+        <img src="image/asmit.jpeg" class="main" id="main4" style="display: none;">
+        <div class="subMain" id="subMain4" style="display: none;">
+            <br>
+            Happy birthday 🎉🎉🎂🎂🎂 Kritika.<br>
+            May This birthday brings alot <br>of happiness for you 
+            <br><br>You are one the rarest gem😁😅that god had ever<br>
+            made😁having the combination <br>of beautiful heart + sharp mind.<br><br>
+            Teri Tarifo mein toh shabd <br>kam padd jayenge. Tu kamesha khush rahe<br>
+            Tere saare sapne pure ho bas yahi kamna karta hu<br>
+            Aur tu bas aise hi smile karti reh....<br>
+            Duniya ki saari khushiya bhagwan tujhe de<br>
+            And life mein hamesha tujhe success mille<br>
+            I am blesses to have you as a friend<br><br>
+            <span style="font-size: 25px;">-- Asmit Bajaj</span><br><br>
+            <a href="#" style="color:blue;float:right;margin-right:7%;text-decoration: none;"
+            onclick="next();">Next -></a>
+            <a href="#" style="color:blue;float:left;margin-right:7%;text-decoration: none;"
+            onclick="prev();"><- Prev</a>
+        </div>
+
+        <div class="subMain" id="subMain5" style="display: none;
+        margin-top: 1%;margin-left: 28%;font-size: 25px;">
+            Once again a very Happy Birthday Kritika🎂🎂<br>
+            Party Hard and Enjoy the Day
+            <br>🎂🎂🎂✨✨✨✨✨🥳🥳🥳🥳<br>
+            <img src="image/cake.png" class="main" id="main4" style="height: 333px;margin-left: 12%;">
+            <br>
+            <a href="#" style="color:blue;float:right;margin-right:7%;text-decoration: none;"
+            onclick="exit();">Exit Full Screen</a>
+            <a href="#" style="color:blue;float:left;margin-right:7%;text-decoration: none;"
+            onclick="prev();"><- Prev</a>
+        </div>
+        
+    </div>
+</body>
+<script>
+    var elem = document.documentElement;
+    var elem1 = document.getElementById("mainBox");
+function openFullscreen() {
+    document.getElementById("myAudio").play();
+if (elem.requestFullscreen) {
+elem1.style.display="flex";
+document.getElementById("linkdiv").style.display="none";
+elem.requestFullscreen();
+} else if (elem.webkitRequestFullscreen) { /* Safari */
+elem1.style.display="flex";
+document.getElementById("linkdiv").style.display="none";
+elem.webkitRequestFullscreen();
+} else if (elem.msRequestFullscreen) { /* IE11 */
+elem1.style.display="flex";
+document.getElementById("linkdiv").style.display="none";
+elem.msRequestFullscreen();
+}
+}
+
+    id = 1;
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function next(){
+        document.getElementById("main"+id).style.display = "none";
+        document.getElementById("subMain"+id).style.display = "none";
+        id++;
+        if(id != 5){
+            document.getElementById("main"+id).style.display = "";
+            document.getElementById("subMain"+id).style.display = "";
+        }else{
+            document.getElementById("subMain"+id).style.display = "";
+        }
+    }
+
+    function prev(){
+        if(id != 5){
+            document.getElementById("main"+id).style.display = "none";
+            document.getElementById("subMain"+id).style.display = "none";
+        }else{
+            document.getElementById("subMain"+id).style.display = "none";
+        }
+
+        
+        id--;
+        document.getElementById("main"+id).style.display = "";
+        document.getElementById("subMain"+id).style.display = "";
+        
+    }
+
+    function exit(){
+        document.exitFullscreen();
+    }
+
+</script>
+</html>
